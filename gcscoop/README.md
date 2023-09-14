@@ -40,7 +40,7 @@ Below we provide an example on how to evaluate the model on Caltech101.
 
 ```bash
 bash scripts/base2new_train.sh caltech101 0.1
-bash scripts/base2new_test.sh caltech101 0.2
+bash scripts/base2new_test.sh caltech101 0.1
 ```
 
 When the evaluation is done, you can use `parse_test_res.py` to automatically calculate the average results. For instance, after you finish the evaluation using the aforementioned commands, you would get
