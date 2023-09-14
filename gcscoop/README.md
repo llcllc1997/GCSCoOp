@@ -39,8 +39,8 @@ You will need `base2new_train_main.sh`, `base2new_test_main.sh`, and `run.sh`. T
 Below we provide an example on how to evaluate the model on Caltech101.
 
 ```bash
-bash base2new_train.sh caltech101 0.1
-bash base2new_test.sh caltech101 0.2
+bash scripts/base2new_train.sh caltech101 0.1
+bash scripts/base2new_test.sh caltech101 0.2
 ```
 
 When the evaluation is done, you can use `parse_test_res.py` to automatically calculate the average results. For instance, after you finish the evaluation using the aforementioned commands, you would get
@@ -76,5 +76,13 @@ To get the average performance on the new classes, run
 
 ```bash
 python parse_test_res.py output/base2new/test_new/caltech101/shots_16_0.1/SharpCoOp/vit_b16_ctxv1 --test-log
+```
+
+## Cross-domain Generalization
+Below we provide an example on how to train the model on Imagenet and evaluate on Imagenet-v2.
+
+```bash
+bash scripts/main_train.sh imagenet 0.1
+bash scripts/eval_domain.sh imagenetv2 0.1
 ```
 
