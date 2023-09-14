@@ -50,17 +50,17 @@ output
 |–– base2new/
 |   |–– test_new/
 |   |   |–– caltech101/
-|   |   |   |–– shots_16/
-|   |   |   |   |–– CoCoOp/
-|   |   |   |   |   |–– rn50_ep100/
+|   |   |   |–– shots_16_0.1/
+|   |   |   |   |–– SharpCoOp/
+|   |   |   |   |   |–– vit_b16_ctxv1/
 |   |   |   |   |   |   |–– seed1/
 |   |   |   |   |   |   |–– seed2/
 |   |   |   |   |   |   |–– seed3/
 |   |–– train_base/
-|   |   |–– stanford_cars/
-|   |   |   |–– shots_16/
-|   |   |   |   |–– CoCoOp/
-|   |   |   |   |   |–– rn50_ep100/
+|   |   |–– caltech101/
+|   |   |   |–– shots_16_0.1/
+|   |   |   |   |–– SharpCoOp/
+|   |   |   |   |   |–– vit_b16_ctxv1/
 |   |   |   |   |   |   |–– seed1/
 |   |   |   |   |   |   |–– seed2/
 |   |   |   |   |   |   |–– seed3/
@@ -69,12 +69,12 @@ output
 Then, to get the average performance on the base classes, run
 
 ```bash
-python parse_test_res.py output/base2new/train_base/stanford_cars/shots_16/CoCoOp/rn50_ep100
+python parse_test_res.py output/base2new/train_base/caltech101/shots_16_0.1/SharpCoOp/vit_b16_ctxv1
 ```
 
 To get the average performance on the new classes, run
 
 ```bash
-python parse_test_res.py output/base2new/test_new/stanford_cars/shots_16/CoCoOp/rn50_ep100 --test-log
+python parse_test_res.py output/base2new/test_new/caltech101/shots_16_0.1/SharpCoOp/vit_b16_ctxv1 --test-log
 ```
 
