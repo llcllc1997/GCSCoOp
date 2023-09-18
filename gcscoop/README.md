@@ -34,7 +34,7 @@ Follow [DATASETS.md](DATASETS.md) to install the datasets.
 
 ## Generalization From Seen to Unseen Classes
 ```bash
-cd ./gcscoop
+cd /gcscoop
 ```
 You will need `base2new_train_main.sh`, `base2new_test_main.sh`. The scripts with the prefix `base2new_train` train a model on base (seen) classes while the ones with the prefix `base2new_test` evaluate the trained model on new (unseen) classes. Both kinds of scripts have only two input arguments, i.e., `DATASET` and 'rho'. `DATASET` takes as input a dataset name, like `imagenet` or `caltech101`. 'rho' indicates the perturbation radius for optimizition. The valid names are the files' names in `gcscoop/configs/datasets/`.
 
