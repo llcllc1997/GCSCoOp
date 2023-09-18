@@ -10,6 +10,7 @@ This code is built on top of the toolbox [Dassl.gcscoop.pytorch]. You can prepar
 
 ```
 cd Dassl.gcscoop.pytorch/
+
 # Create a conda environment
 conda create -n dassl python=3.7
 
